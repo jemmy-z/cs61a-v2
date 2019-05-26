@@ -92,7 +92,10 @@ h6 {
 BACKGROUND
 */
 .background {
-    padding: 4em;
+    padding-top: 4em;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    padding-left: 4em;
 }
 
     aside.background {
@@ -132,6 +135,10 @@ a.week {
     color: #000;
 }
 
+a.locked {
+    background: transparent;
+}
+
 /*
 MAIN
 */
@@ -149,8 +156,11 @@ MAIN
         background: #e2e1de;
     }
 
+#announcements {
+    background: #ede6d3;
+}
 #announcements:hover {
-    background: #f2f1ed;
+    background: #ede6d3;
 }
 
 .module hr {
@@ -163,8 +173,70 @@ MAIN
     margin-left: 2em;
 }
 
-.module.locked {
+.locked {
+    pointer-events: none;
     background: #aaa;
     color: #ccc;
 }
 
+section p, ul{
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+section ul {
+    margin-left: 1em;
+}
+
+footer {
+    font-size: 25px;
+}
+
+footer a {
+    color: #999;
+}
+
+    footer a:hover {
+        color: #555;
+    }
+
+#copyright {
+    font-size: 10px;
+    margin-top: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #999;
+    text-align: center;
+}
+
+#social-media {
+    margin-top: 1.5em;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.wrapper {
+    padding-bottom: 3em;
+}
+
+.subsection {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.note {
+    font-size: 18px;
+    color: #aaa;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background: #ddd;
+    border: none;
+    height: 3px;
+}
