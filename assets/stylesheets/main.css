@@ -103,13 +103,14 @@ BACKGROUND
         width: 25%;
         position: fixed;
         z-index: 1;
-        background: #f2f1ed;
+        background: linear-gradient(to right, #a3dbff, #fff);
         overflow-x: hidden;
     }
 
     section.background {
         margin-left: 25%;
     }
+
 
 #week-schedule, #week-overview, #other-links {
     line-height: 1.5em;
@@ -128,7 +129,7 @@ a {
 
     a:hover {
         text-decoration: none;
-        color: #e2c400;
+        color: #e072ff;
     }
 
 a.week {
@@ -144,7 +145,7 @@ MAIN
 */
 .module {
     width: 100%;
-    background: #f2f1ed;
+    background: #e8f8ff;
     padding: 2em;
     margin-bottom: 1em;
     min-height: 10em;
@@ -153,20 +154,19 @@ MAIN
     line-height: 1.5em;
 }
     .module:hover {
-        background: #e2e1de;
+        background: #ceecff;
     }
 
-#announcements {
-    background: #ede6d3;
-}
-#announcements:hover {
-    background: #ede6d3;
+.announcements {
+    background: #d8faff;
 }
 
-.module hr {
-    background: #ccc;
-    border: none;
-    height: 5px;
+.announcements:hover {
+    background: #d8faff;
+}
+
+.announcements.weekly {
+    margin-top: 2em;
 }
 
 .module ul {
@@ -197,7 +197,7 @@ footer {
 }
 
 footer a {
-    color: #999;
+    color: #93e4ff;
 }
 
     footer a:hover {
@@ -240,3 +240,8 @@ hr {
     border: none;
     height: 3px;
 }
+
+    .module hr {
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
