@@ -132,10 +132,6 @@ a {
         color: #e072ff;
     }
 
-a.week {
-    color: #000;
-}
-
 a.locked {
     background: transparent;
 }
@@ -153,17 +149,18 @@ MAIN
     font-size: 20px;
     line-height: 1.5em;
 }
+    
     .module:hover {
-        background: #ceecff;
+        background: #d6f2ff;
     }
 
 .announcements {
     background: #d8faff;
 }
 
-.announcements:hover {
-    background: #d8faff;
-}
+    .announcements:hover {
+        background: #d8faff;
+    }
 
 .announcements.weekly {
     margin-top: 2em;
@@ -171,13 +168,36 @@ MAIN
 
 .module ul {
     margin-left: 2em;
+    padding-top: 0.1em;
 }
+
+.announcements ul {
+    padding-top: 1em;
+}
+
+.bordered {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #429bf4;
+    border-radius: 0.2em;
+    font-size: 15px;
+    padding: 1px 5px 1px 5px;
+}
+
+    .bordered:hover {
+        background-color:#429bf4;
+        color: white;
+    }
 
 .locked {
     pointer-events: none;
     background: #aaa;
     color: #ccc;
 }
+    
+    .bordered.locked {
+        border-color: #aaa;
+    }
 
 section p, ul{
     font-size: 20px;
