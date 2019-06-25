@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Muli', sans-serif;
+}
+
+
+/*
+HEADERS
+*/
+h1, h2, h3, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 30px;
+    letter-spacing: 5%;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+
+/*
+BACKGROUND
+*/
+.background {
+    padding-top: 4em;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+}
+
+    aside.background {
+        height: 100%;
+        width: 25%;
+        position: fixed;
+        z-index: 1;
+        background: linear-gradient(to right, #a3dbff, #fff);
+        overflow-x: hidden;
+    }
+
+    section.background {
+        margin-left: 25%;
+    }
+
+
+#week-schedule, #week-overview, #other-links {
+    line-height: 1.5em;
+    margin-top: 3em;
+    font-size: 20px;
+}
+
+
+/*
+LINKS
+*/
+a {
+    text-decoration: none;
+    color: #006de2;   
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #e072ff;
+    }
+
+a.locked {
+    background: transparent;
+}
+
+/*
+MAIN
+*/
+.module {
+    width: 100%;
+    background: #e8f8ff;
+    padding: 2em;
+    margin-bottom: 1em;
+    min-height: 10em;
+    border-radius: 0.5em;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+    
+    .module:hover {
+        background: #d6f2ff;
+    }
+
+.announcements {
+    background: #d8faff;
+}
+
+    .announcements:hover {
+        background: #d8faff;
+    }
+
+.announcements.weekly {
+    margin-top: 2em;
+}
+
+.module ul {
+    margin-left: 2em;
+    padding-top: 0.1em;
+}
+
+.announcements ul {
+    padding-top: 1em;
+}
+
+.bordered {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #429bf4;
+    border-radius: 0.2em;
+    font-size: 15px;
+    padding: 1px 5px 1px 5px;
+}
+
+    .bordered:hover {
+        background-color:#429bf4;
+        color: white;
+    }
+
+.locked {
+    pointer-events: none;
+    background: #aaa;
+    color: #ccc;
+}
+    
+    .bordered.locked {
+        border-color: #aaa;
+    }
+
+section p, ul{
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+section ul {
+    margin-left: 1em;
+}
+
+footer {
+    font-size: 25px;
+}
+
+footer a {
+    color: #93e4ff;
+}
+
+    footer a:hover {
+        color: #555;
+    }
+
+#copyright {
+    font-size: 10px;
+    margin-top: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #999;
+    text-align: center;
+}
+
+#social-media {
+    margin-top: 1.5em;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.wrapper {
+    padding-bottom: 3em;
+}
+
+.subsection {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.note {
+    font-size: 18px;
+    color: #aaa;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background: #ddd;
+    border: none;
+    height: 3px;
+}
+
+    .module hr {
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+
+
+code {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    color: #116cff;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    padding: 1px 4px 1px 4px;
+}
+
+pre {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    background-color: #e6e8ea;
+    padding: 1em;
+    border-radius: 0.3em;
+    border-color: #aaa;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.subsection > pre {
+    margin-left: 1em;
+}
