@@ -1,6 +1,7 @@
 # Notes on List Comprehension
 ###### Last updated Fall 2019
 
+*Disclaimer: These are not official class notes. They're just meant to be a quick reference. Please let me know if there are any typos or mistakes.*
 
 ### Overview
 The idea behind list comprehension is to "do something" to an entire list in one line. It doesn't really improve you code performance wise, but sometimes may help make your code more readable (compared to a for loop).
