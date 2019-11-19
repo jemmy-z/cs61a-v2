@@ -16,7 +16,7 @@ CREATE TABLE <name> AS
 
 ```sql
 SELECT <column list>
-FROM <table>
+FROM <table>;
 ```
 
 ### Full Query
